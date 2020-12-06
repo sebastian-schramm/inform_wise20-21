@@ -1,0 +1,28 @@
+\section[Äquivalenz mit XOR]{Wie zeigen Sie, die Äquivalenz der folgenden Ausdrücke mit XOR}
+(x\vee y)\wedge \neg(x\wedge y)\\
+\begin{tabular}[h]{c|c|c|c|c}
+	x & y & (x\vee y) & \neg(x\wedge y) & a\wedge b \\
+	\hline
+	0 & 0 & 0 & 1 & 0 \\
+	0 & 1 & 1 & 1 & 1 \\
+	1 & 0 & 1 & 1 & 1 \\
+	1 & 1 & 1 & 0 & 0 \\
+\end{tabular}\\
+\neg((x\wedge y)\vee(\neg x\wedge \neg y))\\
+\begin{tabular}[h]{c|c|c|c|c}
+	x & y & (x\wedge y) & (\neg x\wedge \neg y) & \neg(a\vee b) \\
+	\hline
+	0 & 0 & 0 & 1 & 0 \\
+	0 & 1 & 0 & 0 & 1 \\
+	1 & 0 & 0 & 0 & 1 \\
+	1 & 1 & 1 & 0 & 0 \\
+\end{tabular}\\
+\neg(x\wedge y)\wedge(x\vee y)\\
+\begin{tabular}[h]{c|c|c|c|c}
+	x & y & \neg(x\wedge y) & (x\vee y) & a\wedge b \\
+	\hline
+	0 & 0 & 0 & 1 & 0 \\
+	0 & 1 & 1 & 1 & 1 \\
+	1 & 0 & 1 & 1 & 1 \\
+	1 & 1 & 1 & 0 & 0 \\
+\end{tabular}
