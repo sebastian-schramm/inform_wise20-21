@@ -6,12 +6,12 @@ public class IntStack {
     private int stackSize;
 
     public IntStack(int size) {
-        stack = new int[size];
+        init(size);
         stackPos = 0;
         stackSize = size;
     }
 
-    public void init() {
+    public void init(int size) {
         stack = new int[stackSize];
     }
 

@@ -1,5 +1,7 @@
 package aufgabe_08;
 
+import aufgabe_08.IntStack;
+
 public class Main {
 
     public static void main(String[] args) {
