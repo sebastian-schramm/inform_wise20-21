@@ -1,0 +1,25 @@
+@startuml
+start
+:initialisiere length mit 200;
+:initialisiere anzahlQuadrate mit 2;
+
+:initialisiere outerloop mit 0;
+:initialisiere innerloop mit 0;
+
+while (outerloop kleiner anzahlQuadrate)
+    :erhöhe outerloop um eins;
+    :turn(90);
+    :move(length / 2);
+    :turn(90);
+    :move(length / 2);
+    :down();
+    while (innerloop kleiner 4)
+        :erhöhe innerloop um eins;
+        :move(length);
+        :turn(90);
+    endwhile
+    :up();
+    :setze length gelich length / 2;
+endwhile
+stop
+@enduml
