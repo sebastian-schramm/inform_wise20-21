@@ -12,7 +12,7 @@ public class IntStack {
     }
 
     public void init(int size) {
-        stack = new int[stackSize];
+        stack = new int[size];
     }
 
     public boolean empty() {
