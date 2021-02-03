@@ -19,7 +19,7 @@ while (outerloop kleiner anzahlQuadrate)
         :turn(90);
     endwhile
     :up();
-    :setze length gelich length / 2;
+    :setze length gleich length / 2;
 endwhile
 stop
 @enduml
