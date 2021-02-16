@@ -6,10 +6,10 @@ int length = 200;
 int anzahlQuadrate = 2;
 
 wiederhole (anzahlQuadrate) {
-	turn(90);
-	move(length / 2);
-	turn(90);
-	move(length / 2);
+	wiederhole (2) {
+		draw.turn((n \% 2) != 0 ? -90 : 90);
+		draw.move(length / 2);
+	}
 	down();
 	wiederhole (4) {
 		move(length);
